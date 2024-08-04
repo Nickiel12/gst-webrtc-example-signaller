@@ -34,8 +34,15 @@ Some utility commands:
       };
       rustSettings = with pkgs; {
         src = ./.;
-        #nativeBuildInputs = [ pkg-config ];
-        #buildInputs = [ openssl ];
+        nativeBuildInputs = [ pkg-config ];
+        buildInputs = [
+          openssl
+          gst_all_1.gstreamer
+          gst_all_1.gst-plugins-base
+          gst_all_1.gst-plugins-good
+          gst_all_1.gst-plugins-bad # contains gstreamer-webrtc-1.0
+          gst_all_1.gst-plugins-rs
+        ];
         cargoHash = nixpkgs.lib.fakeHash;
       };
       meta = with nixpkgs.lib; {
