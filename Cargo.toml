@@ -1,5 +1,5 @@
 [package]
-name = "vcs-camera-satellite"
+name = "gst-webrtc-example-signaller"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,15 +7,8 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0.86"
-config = "0.14.0"
 gst-plugin-webrtc = "0.13.0"
 gstreamer = { version = "0.23.0", features = ["v1_22"] }
 gstreamer-sdp = { version = "0.23.0", features = ["v1_22"] }
 gstreamer-webrtc = { version = "0.23.0", features = ["v1_22"] }
-log = "0.4.22"
-serde = { version = "1.0.204", features = ["derive"] }
-serde_json = "1.0.122"
 tokio = "1.39.2"
-tokio-tungstenite = "0.23.1"
-tracing = "0.1.40"
-tracing-subscriber = "0.3.18"
