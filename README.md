@@ -2,6 +2,8 @@ A compilable clone of the [official webrtc signaller example](https://gitlab.fre
 
 The main reason behind publishing this repo is that I could only find one example of this code in the wild, and it took me a long time to get the right imports, so I made this example.
 
+To run this code clone the repository, and make sure gstreamer, gst-plugins base, and bad are installed. **Do not install gst-plugins-rs** as when this library is loaded, it clashes with the gstrswebrtc library that registers the required plugins and elements at program time.
+
 
 ## Original README from source
 
